@@ -1,0 +1,12 @@
+const revealButton = document.querySelector(".reveal-button");
+const hiddenSection = document.querySelector(".hidden-section");
+
+function revealSection() {
+    if (hiddenSection.classList.contains("reveal")) {
+        hiddenSection.classList.remove("reveal");
+    } else {
+        hiddenSection.classList.add("reveral");
+    }
+}
+
+revealButton.addEventListener("click", revealSection,false);
